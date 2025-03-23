@@ -1,0 +1,42 @@
+---
+layout: default
+title: "Shop More"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script defer src="/assets/js/animations.js"></script>
+</head>
+<body>
+    <header>
+        <div class="banner">Explore More Products</div>
+        <nav>
+            <a href="/">Home</a> | <a href="/shop.html">Shop</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section class="products-grid">
+                {% for product in site.data.more_products %}
+                <div class="product fade-in" data-delay="{{ forloop.index | times: 100 }}">
+                    <img src="{{ product.image }}" alt="{{ product.name }}" loading="lazy">
+                    <h3>{{ product.name }}</h3>
+                    <p>{{ product.price }}</p>
+                    <a href="{{ product.link }}" class="buy-button">Buy Now</a>
+                </div>
+                {% endfor %}
+            </section>
+        </div>
+        
+        <footer>
+            <p>&copy; {{ site.time | date: '%Y' }} Merch Shop. All rights reserved.</p>
+        </footer>
+    </main>
+</body>
+</html>

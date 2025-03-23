@@ -1,0 +1,52 @@
+---
+layout: default
+title: "Merch Shop"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script defer src="/assets/js/animations.js"></script>
+    <meta name="description" content="The best place to find exclusive merchandise with fast shipping and great deals.">
+</head>
+<body>
+    <header>
+        <div class="banner">Welcome to Our Merch Store</div>
+        <nav>
+            <a href="/">Home</a> | <a href="/shop.html">Shop</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container">
+            <aside class="ad-space">
+                <img src="/assets/images/ad-banner.png" alt="Advertisement">
+            </aside>
+            
+            <section class="products-grid">
+                {% for product in site.data.products %}
+                <div class="product fade-in" data-delay="{{ forloop.index | times: 100 }}">
+                    <img src="{{ product.image }}" alt="{{ product.name }}" loading="lazy">
+                    <h3>{{ product.name }}</h3>
+                    <p>{{ product.price }}</p>
+                    <a href="{{ product.link }}" class="buy-button">Buy Now</a>
+                </div>
+                {% endfor %}
+            </section>
+        </div>
+        
+        <section class="info-section">
+            <h2>Why Shop With Us?</h2>
+            <p>We provide high-quality products at competitive prices, with fast and secure shipping.</p>
+        </section>
+        
+        <footer>
+            <p>&copy; {{ site.time | date: '%Y' }} Merch Shop. All rights reserved.</p>
+        </footer>
+    </main>
+</body>
+</html>
