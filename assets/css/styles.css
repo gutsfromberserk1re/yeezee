@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f5f5dc; /* Beige background */
     color: #333;
 }
 
 .banner {
-    background-color: #2c3e50;
+    background-color: #6b4f3e; /* Cocoa color */
     color: #fff;
     text-align: center;
     padding: 30px 0;
@@ -35,10 +35,18 @@ body {
     padding: 20px;
     box-sizing: border-box;
     width: calc(100% - 240px); /* Adjust width for the ad space */
+    opacity: 0; /* Start hidden */
+    animation: fadeInGrid 1s forwards ease-in-out;
+}
+
+@keyframes fadeInGrid {
+    100% {
+        opacity: 1;
+    }
 }
 
 .product {
-    background-color: #f9f9f9;  /* Light background */
+    background-color: #d7c6b2;  /* Light tan for product background */
     border-radius: 12px 12px 8px 8px; /* Rounded corners */
     padding: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow around box */
@@ -46,6 +54,7 @@ body {
     transition: transform 0.3s ease-in-out; /* Hover effect */
     opacity: 0; /* Hidden until fade-in */
     transform: translateY(20px); /* Start from below */
+    animation: fadeIn 0.6s forwards ease-in-out; /* Product fade-in animation */
 }
 
 .product img {
@@ -57,7 +66,7 @@ body {
 .product h3 {
     font-size: 1.2rem;
     margin-top: 10px;
-    color: #333;
+    color: #6b4f3e; /* Cocoa color for text */
 }
 
 .product p {
@@ -69,7 +78,7 @@ body {
 .product a.buy-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #7a5a4f; /* Cocoa color */
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -78,11 +87,7 @@ body {
 }
 
 .product a.buy-button:hover {
-    background-color: #45a049; /* Darker green when hovering */
-}
-
-.fade-in {
-    animation: fadeIn 0.6s forwards ease-in-out;
+    background-color: #6b4f3e; /* Darker cocoa on hover */
 }
 
 @keyframes fadeIn {
