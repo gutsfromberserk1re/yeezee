@@ -1,0 +1,49 @@
+- name: "Cool Hoodie"
+  image: "/assets/images/hoodie.jpg"
+  price: "$39.99"
+  link: "#"
+
+- name: "Gaming Mouse"
+  image: "/assets/images/mouse.jpg"
+  price: "$29.99"
+  link: "#"
+
+- name: "Wireless Earbuds"
+  image: "/assets/images/earbuds.jpg"
+  price: "$49.99"
+  link: "#"
+
+- name: "Stylish Backpack"
+  image: "/assets/images/backpack.jpg"
+  price: "$59.99"
+  link: "#"
+
+- name: "Stylish Backpack"
+  image: "/assets/images/backpack.jpg"
+  price: "$59.99"
+  link: "#"
+
+- name: "Stylish Backpack"
+  image: "/assets/images/backpack.jpg"
+  price: "$59.99"
+  link: "#"
+
+- name: "Stylish Backpack"
+  image: "/assets/images/backpack.jpg"
+  price: "$59.99"
+  link: "#"
+
+- name: "Stylish Backpack"
+  image: "/assets/images/backpack.jpg"
+  price: "$59.99"
+  link: "#"
+
+- name: "Stylish Backpack"
+  image: "/assets/images/backpack.jpg"
+  price: "$59.99"
+  link: "#"
+
+- name: "Stylish Backpack"
+  image: "/assets/images/backpack.jpg"
+  price: "$59.99"
+  link: "#"
